@@ -2,31 +2,40 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+
+         {
+
 
             int a = 50000;
+            System.out.println(a);
             byte b = 10;
+            System.out.println(b);
             short c = 11000;
+            System.out.println(c);
             long d = 12000000;
+            System.out.println(d);
             float e = 1.57f;
+            System.out.println(e);
             double f = 1.8888;
+            System.out.println(f);
         }
 
 
         float a = 27.12f;
+        System.out.println(a);
         long b = 987678965549L;
+        System.out.println(b);
         float c = 2.768f;
+        System.out.println(c);
         short d = 569;
+        System.out.println(d);
         short e = -159;
+        System.out.println(e);
         short f = 27897;
-        byte g = 27;
+        System.out.println(f);
+        byte g = 67;
+        System.out.println(g);
 
         byte tih1 = 23;
         byte tih2 = 27;
@@ -83,7 +92,7 @@ public class Main {
         System.out.println("уходит коричневой " + potBrown1 + " банок на один класс");
         System.out.println("в школе где " + class1 + " классов нужно " + potWhite1  + " банок белой краски и " + potBrown1 + " банок коричневой краски" ) ;
 
-        int grPerKg = 100;
+        byte grPerKg = 100;
         byte banan5 = 5;
         float banan1gr = 0.8f;
         short milk = 200;
@@ -100,6 +109,10 @@ public class Main {
         System.out.println("в двух брикетах мороженого " + iceCream3 + " грамм!");
         short eggs4gr = (short) (eggs * (eggs1gr * grPerKg));
         System.out.println("в четырех яйцах " + eggs4gr + " грамм!");
+        short gr = (short) (milk2 + banan + iceCream3 + eggs4gr);
+        System.out.println("Общий вес завтрака " + gr + " грамм!");
+        double kg1 = (double) (gr / grPerKg);
+        System.out.println("общий вес завтрака " + kg1 + " кг!");
 
         byte kg = 7;
         int kgPerGr = 1000;
@@ -113,21 +126,40 @@ public class Main {
         System.out.println("необходимо " + days2 + " дней чтобы похудеть на 7 кг!");
 
         int solaryM = 67760;
+        System.out.println(solaryM);
         int solaryD = 83690;
+        System.out.println(solaryD);
         int solaryK = 76230;
+        System.out.println(solaryK);
         byte later = 12;
+
+        int income = (int) (later * solaryM);
+        System.out.println("Годовой дохор маши " + income + " руб!");
         float upM =  (float) (solaryM * 1.1);
         System.out.println("Маша теперь получает " + upM + " руб!");
         int laterM = (int) (later * upM);
         System.out.println("Машин годовой доход составил " + laterM + " руб!");
+        int difference = (int) (laterM - income);
+        System.out.println("Разница годового доход Маши составила " + difference + " руб!");
+
+        int income1 = (int) (later * solaryD);
+        System.out.println("Годовой доход Дениса "+ income1 + " руб!");
         float upD = (float) (solaryD * 1.1);
         System.out.println("Денис теперь получает " + upD + " руб!");
         int laterD = (int) (later * upD);
         System.out.println("Дениса годовой доход составил " + laterD + " руб!");
+        int difference1 = (int) (laterD - income1);
+        System.out.println("Разница годового дохода Дениса составила " + difference1 + " руб!");
+
+
+        int income2 = (int) (later * solaryK);
+        System.out.println("Годово доход Кристины " + income2 + " руб!");
         float upK = (float) (solaryK * 1.1);
         System.out.println("Кристина теперь получает " + upK + " руб!");
         int laterK = (int) (later * upK);
         System.out.println("Кристинын годовой доход составил " + laterK + " руб!");
+        int difference2 = (int) (laterK - income2);
+        System.out.println("Разница годового дохода Кристины составила " + difference2 + " руб!");
 
 
 
