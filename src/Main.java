@@ -93,6 +93,7 @@ public class Main {
         System.out.println("в школе где " + class1 + " классов нужно " + potWhite1  + " банок белой краски и " + potBrown1 + " банок коричневой краски" ) ;
 
         byte grPerKg = 100;
+        int grKg = 1000;
         byte banan5 = 5;
         float banan1gr = 0.8f;
         short milk = 200;
@@ -111,7 +112,7 @@ public class Main {
         System.out.println("в четырех яйцах " + eggs4gr + " грамм!");
         short gr = (short) (milk2 + banan + iceCream3 + eggs4gr);
         System.out.println("Общий вес завтрака " + gr + " грамм!");
-        double kg1 = (double) (gr / grPerKg);
+        float kg1 = (float) (gr / grKg);
         System.out.println("общий вес завтрака " + kg1 + " кг!");
 
         byte kg = 7;
